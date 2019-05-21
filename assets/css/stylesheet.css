@@ -1,23 +1,36 @@
-html,
-body
-{
-  padding: 0;
-  margin: 0;
-  font-family: Arial, sans-serif;
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
-
 /* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
 body
 {
-  overflow-x: hidden;
-  background: url('../images/bg.jpg') repeat top left;
+  /* overflow-x: hidden; */
+  background: url('../img/gradient.jpg');
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin:auto;
+  padding:0;
+
 }
 
 h1
 {
+  color: #2e6e80;
   font-size: 20px;
   font-weight: normal;
-  color: #2e6e80;
+}
+
+.torylogo {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  width: 50%;
 }
 
 /**
@@ -38,8 +51,9 @@ h1
 .horizon
 {
   z-index: 1;
-  width: 3000px;
+  width: 300px;
 }
+
 
 .middle
 {
