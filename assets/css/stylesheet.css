@@ -30,6 +30,29 @@ h1 {
   font-weight: normal;
 }
 
+.scroll {
+  position: fixed;
+}
+
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+
+.horizon {
+  z-index: 1;
+  width: 300px;
+}
+
+.middle {
+  z-index: 500;
+  width: 4000px;
+}
+
+.front {
+  z-index: 10;
+  width: 6000px;
+}
 
 .rustlogo {
   position: absolute;
@@ -73,7 +96,7 @@ h1 {
   position: absolute;
   max-width: 35%;
   max-height: 35%;
-  top: 25%;
+  top: 15%;
   left: 10%;
 
 }
@@ -128,8 +151,8 @@ h1 {
   position: absolute;
   max-width: 35%;
   max-height: 35%;
-  top: 55%;
-  left: 55%;
+  top: 45%;
+  left: 5%;
 
 }
 .imgcolumn2 .image5 {
@@ -161,29 +184,3 @@ h1 {
   * important: keep position fixed, you can however use top:0 instead of bottom:0
   * if you want to make it stick to the top of the browser
   */
-
-.scroll {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-
-/**
-  * z-index ordering of the different layers, do this for your layers,
-  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
-  */
-
-.horizon {
-  z-index: 1;
-  width: 300px;
-}
-
-.middle {
-  z-index: 500;
-  width: 4000px;
-}
-
-.front {
-  z-index: 1000;
-  width: 6000px;
-}
