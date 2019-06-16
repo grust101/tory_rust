@@ -1,3 +1,6 @@
+$(document).ready(function() {
+  document.getElementsByTagName("html")[0].style.visibility = "visible";
+});
 (function($) {
   $.jInvertScroll(['.scroll'], // an array containing the selector(s) for the elements you want to animate
     {

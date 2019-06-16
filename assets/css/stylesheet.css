@@ -1,3 +1,5 @@
+html { visibility:hidden; }
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -92,6 +94,18 @@ h1 {
   width: 50%;
   float: left;
 }
+
+@-webkit-keyframes imgcolumn1 {
+  0% {
+    top: 0;
+    left: -10%;
+  }
+  100% {
+    top: 100px;
+    left: -10%;
+  }
+}
+
 .imgcolumn1 .image1 {
   position: absolute;
   max-width: 35%;
@@ -100,6 +114,7 @@ h1 {
   left: 10%;
 
 }
+
 .imgcolumn1 .image2 {
   position: absolute;
   max-width: 45%;
