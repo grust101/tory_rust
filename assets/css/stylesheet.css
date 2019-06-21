@@ -9,6 +9,43 @@ html { visibility:hidden; }
   }
 }
 
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 4; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: red;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 /* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
 
 body {
@@ -36,40 +73,40 @@ h1 {
   position: fixed;
 }
 
-/**
-  * z-index ordering of the different layers, do this for your layers,
-  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
-  */
-
 .horizon {
   z-index: 1;
-  width: 300px;
+  width: 6000px;
 }
 
 .middle {
-  z-index: 500;
+  z-index: 2;
   width: 4000px;
 }
 
+.logo{
+  position: -webkit-sticky;
+  position: sticky;
+  left: -200px;
+}
+
 .front {
-  z-index: 10;
-  width: 6000px;
+  z-index: 3;
+  width: 50%;
+  height: 50%;
 }
 
 .rustlogo {
   position: absolute;
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 25%;
+  max-height: 25%;
   top: 50%;
-  left: 50%;
+  left: 35%;
   overflow: visible;
 }
 
 .rustlogo img {
   max-width: 100%;
   max-height: 100%;
-  margin-top: -60%;
-  margin-left: -80%;
   height: auto;
   position: relative;
   animation: rustlogo 5s cubic-bezier(0.25, 0.1, 0.25, 1.0) 0s forwards;
@@ -80,9 +117,13 @@ h1 {
     top: 300px;
     left: -10%;
   }
+  50%{
+    top: 200px;
+    left: -10%; }
+
   100% {
-    top: 0px;
-    left: -10%;
+    top: 100px;
+    left: -130%;
   }
 }
 
@@ -125,18 +166,18 @@ h1 {
 }
 .torylogo {
   position: absolute;
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 25%;
+  max-height: 25%;
   top: 50%;
-  left: 50%;
+  left: 35%;
   overflow: visible;
 }
 
 .torylogo img {
   max-width: 100%;
   max-height: 100%;
-  margin-top: -100%;
-  margin-left: -80%;
+  /* margin-top: -100%;
+  margin-left: -80%; */
   height: auto;
   position: relative;
   animation: torylogo 5s cubic-bezier(0.25, 0.1, 0.25, 1.0) 0s forwards;
@@ -144,12 +185,16 @@ h1 {
 
 @-webkit-keyframes torylogo {
   0% {
-    top: 0;
+    top: 200px;
     left: -10%;
   }
-  100% {
-    top: 100px;
+  50% {
+    top: 225px;
     left: -10%;
+  }
+  100%{
+    top: 250px;
+    left: -130%;
   }
 }
 
@@ -194,6 +239,7 @@ h1 {
   left: 70%;
 
 }
+
 /**
 /**
   * important: keep position fixed, you can however use top:0 instead of bottom:0
