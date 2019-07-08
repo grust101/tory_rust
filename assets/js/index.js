@@ -1,6 +1,19 @@
 $(document).ready(function() {
-  document.getElementsByTagName("html")[0].style.visibility = "visible";
+  document.getElementsByClassName('intropage')[0].style.visibility = "visible";
+  document.getElementsByClassName('overviewpage')[0].style.visibility = "hidden";
+
 });
+
+$(document).scroll(function() {
+
+    if ($(this).scrollTop() > 10)
+     {
+       $('.overviewpage').style.visibility = "visible"
+     }
+    else
+     {
+       $('.elements').hide();     }
+ });
 (function($) {
   $.jInvertScroll(['.scroll'], // an array containing the selector(s) for the elements you want to animate
     {
@@ -9,18 +22,20 @@ $(document).ready(function() {
       }
     });
 
-  $('.menu a').on('click', function(e) {
-    e.preventDefault();
-    var target = '.' + $(this).data('target');
-    var left = $(target).position().left;
-    var total = $('.front.scroll').width();
-    var perc = left / (total - $(window).width()) * 100;
+  // $('.menu a').on('click', function(e) {
+  //   e.preventDefault();
+  //   var target = '.' + $(this).data('target');
+  //   var left = $(target).position().left;
+  //   var total = $('.front.scroll').width();
+  //   var perc = left / (total - $(window).width()) * 100;
+  //
+  //   var height = $('html').height();
+  //   var final = ((height - $(window).height()) / 100 * perc);
+  //
+  //   $('html, body').animate({
+  //     scrollTop: final
+  //   }, 500);
+  // });
 
-    var height = $('html').height();
-    var final = ((height - $(window).height()) / 100 * perc);
 
-    $('html, body').animate({
-      scrollTop: final
-    }, 500);
-  });
 }(jQuery));

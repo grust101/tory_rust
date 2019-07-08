@@ -111,14 +111,9 @@ h1 {
     top: 300px;
     left: -10%;
   }
-  50%{
+  100%{
     top: 200px;
     left: -10%; }
-
-  100% {
-    top: 100px;
-    left: -130%;
-  }
 }
 
 .imgcolumn1 {
@@ -182,20 +177,16 @@ h1 {
     top: 200px;
     left: -10%;
   }
-  50% {
+  100% {
     top: 225px;
     left: -10%;
-  }
-  100%{
-    top: 250px;
-    left: -130%;
   }
 }
 
 .imgcolumn1 .image3 {
   position: absolute;
   max-width: 35%;
-  max-height: 35%;
+  height: auto;
   top: 5%;
   left: 31%;
 
@@ -204,7 +195,7 @@ h1 {
 .imgcolumn2 .image4 {
   position: absolute;
   max-width: 35%;
-  max-height: 35%;
+  height: auto;
   top: 45%;
   left: 5%;
 
@@ -212,7 +203,7 @@ h1 {
 .imgcolumn2 .image5 {
   position: absolute;
   max-width: 45%;
-  max-height: 45%;
+  height: auto;
   top: -25%;
   left: 65%;
 
@@ -220,7 +211,7 @@ h1 {
 .imgcolumn2 .image6 {
   position: absolute;
   max-width: 35%;
-  max-height: 35%;
+  height: auto;
   top: 40%;
   left: 80%;
 
@@ -228,7 +219,7 @@ h1 {
 .imgcolumn2 .image7 {
   position: absolute;
   max-width: 45%;
-  max-height: 45%;
+  height: auto;
   top: 70%;
   left: 70%;
 
