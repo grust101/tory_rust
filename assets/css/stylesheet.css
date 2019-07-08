@@ -49,19 +49,13 @@ html { visibility:hidden; }
 /* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
 
 body {
-  background: url('../img/gradient.jpg');
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
+  background-image: linear-gradient(rgba(243, 203, 213, 1), rgba(244, 213, 208, 1), rgba(237, 232, 223, 1), rgba(229, 248, 241, 1));
   background-repeat: no-repeat;
   text-align: center;
   margin: auto;
   padding: 0;
-  /* max-height: 900px; */
 }
-/* body .background-image {
-  background: url('../img/gradient.jpg');
-} */
 
 h1 {
   color: #2e6e80;
