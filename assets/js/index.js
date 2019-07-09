@@ -1,19 +1,39 @@
 $(document).ready(function() {
-  document.getElementsByClassName('intropage')[0].style.visibility = "visible";
-  document.getElementsByClassName('overviewpage')[0].style.visibility = "hidden";
-
+  document.getElementsByTagName('html')[0].style.visibility = "visible";
 });
 
-$(document).scroll(function() {
-
-    if ($(this).scrollTop() > 10)
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100)
      {
-       $('.overviewpage').style.visibility = "visible"
+       $('.overviewpage').show('slow');
      }
     else
      {
-       $('.elements').hide();     }
+       $('.overviewpage').hide();     }
  });
+
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > 750)
+       {
+         $('.logopage').hide('slow');
+         $('.icon').show('slow');
+       }
+      else
+       {
+         $('.logopage').show('slow');
+         $('.icon').hide('slow');     }
+   });
+
+  // $(window).scroll(function() {
+  //     if ($(this).scrollTop() > 100)
+  //      {
+  //        $('.logopage').hide('slow');
+  //      }
+  //     else
+  //      {
+  //        $('.logopage').show();     }
+  //  });
+
 (function($) {
   $.jInvertScroll(['.scroll'], // an array containing the selector(s) for the elements you want to animate
     {
@@ -21,21 +41,5 @@ $(document).scroll(function() {
       onScroll: function(percent) { //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
       }
     });
-
-  // $('.menu a').on('click', function(e) {
-  //   e.preventDefault();
-  //   var target = '.' + $(this).data('target');
-  //   var left = $(target).position().left;
-  //   var total = $('.front.scroll').width();
-  //   var perc = left / (total - $(window).width()) * 100;
-  //
-  //   var height = $('html').height();
-  //   var final = ((height - $(window).height()) / 100 * perc);
-  //
-  //   $('html, body').animate({
-  //     scrollTop: final
-  //   }, 500);
-  // });
-
 
 }(jQuery));
