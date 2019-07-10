@@ -1,14 +1,14 @@
 html {
-  width:100%;
-  height:100%;
-  visibility:hidden;
-
- }
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
 
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -20,8 +20,8 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   margin: 0px;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   padding: 0;
 }
 
@@ -36,13 +36,14 @@ h1 {
 }
 
 .horizon {
-  z-index: 2;
+  z-index: 3;
   width: 6000px;
 }
 
 .middle {
   z-index: 1;
-  width: 4000px;
+  width: 10000px;
+  height: 20%;
   margin-left: 20%;
 }
 
@@ -51,20 +52,20 @@ h1 {
 }
 
 .rustlogo {
-  position:absolute;
-  max-width:50%;
-  max-height:50%;
-  top:40%;
-  left:40%;
-  overflow:visible;
+  position: absolute;
+  max-width: 50%;
+  max-height: 50%;
+  top: 40%;
+  left: 40%;
+  overflow: visible;
 }
 
 .rustlogo img {
-  position:relative;
-  max-width:100%;
-  max-height:100%;
-  margin-top:-50%;
-  margin-left:-50%;
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: -50%;
+  margin-left: -50%;
   animation: rustlogo 5s cubic-bezier(0.25, 0.1, 0.25, 1.0) 0s forwards;
 }
 
@@ -73,24 +74,21 @@ h1 {
     top: 500px;
     left: 0%;
   }
-  100%{
+
+  100% {
     top: 400px;
-    left: 0%; }
+    left: 0%;
+  }
 }
 
 .imgcolumn1 {
   width: 50%;
   float: left;
-  z-index: 4;
 }
+
 .imgcolumn2 {
   width: 50%;
   float: left;
-  z-index: 4;
-}
-
-.overviewpage {
-  display: none;
 }
 
 @-webkit-keyframes imgcolumn1 {
@@ -98,6 +96,7 @@ h1 {
     top: 0;
     left: -10%;
   }
+
   100% {
     top: 100px;
     left: -10%;
@@ -110,7 +109,6 @@ h1 {
   max-height: 35%;
   top: 15%;
   left: 10%;
-
 }
 
 .imgcolumn1 .image2 {
@@ -119,23 +117,23 @@ h1 {
   max-height: 45%;
   top: 70%;
   left: 25%;
-
 }
+
 .torylogo {
-  position:absolute;
-  max-width:50%;
-  max-height:50%;
-  top:40%;
-  left:40%;
-  overflow:visible;
+  position: absolute;
+  max-width: 50%;
+  max-height: 50%;
+  top: 40%;
+  left: 40%;
+  overflow: visible;
 }
 
 .torylogo img {
-  position:relative;
-  max-width:100%;
-  max-height:100%;
-  margin-top:-50%;
-  margin-left:-50%;
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: -50%;
+  margin-left: -50%;
   animation: torylogo 5s cubic-bezier(0.25, 0.1, 0.25, 1.0) 0s forwards;
 }
 
@@ -144,6 +142,7 @@ h1 {
     top: 0px;
     left: 0%;
   }
+
   100% {
     top: 100px;
     left: 0%;
@@ -156,7 +155,6 @@ h1 {
   height: auto;
   top: 5%;
   left: 31%;
-
 }
 
 .imgcolumn2 .image4 {
@@ -165,76 +163,107 @@ h1 {
   height: auto;
   top: 45%;
   left: 5%;
-
 }
+
 .imgcolumn2 .image5 {
   position: absolute;
   max-width: 45%;
   height: auto;
   top: -25%;
   left: 65%;
-
 }
+
 .imgcolumn2 .image6 {
   position: absolute;
   max-width: 35%;
   height: auto;
   top: 40%;
   left: 80%;
-
 }
+
 .imgcolumn2 .image7 {
   position: absolute;
   max-width: 45%;
   height: auto;
   top: 70%;
   left: 70%;
+}
 
+.overviewpage {
+  display: none;
+}
+
+.elements {
+  max-height: 50%;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(assets/css/fonts/Gotham-Black.otf);
+  font-weight: 400;
 }
 
 /* The sidebar menu */
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
+  display: none;
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
   background-image: linear-gradient(rgba(243, 203, 213, 1), rgba(244, 213, 208, 1), rgba(237, 232, 223, 1), rgba(229, 248, 241, 1));
-  width: 15%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 3; /* Stay on top */
-  overflow-x: hidden; /* Disable horizontal scroll */
+  width: 15%;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 3;
+  /* Stay on top */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
   padding-top: 20px;
 }
 
 .icon {
-  display: none;
+  padding: 10% 8px 6px 16px;
 }
+
 /* The navigation menu links */
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 10% 8px 6px 16px;
   text-decoration: none;
   font-size: 15px;
-  color: #818181;
+  font-family: "Gotham";
+  color: #ffffff;
   display: block;
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: red;
+.sidenav a span:hover {
+  font-style: italic;
+  background-color: #B2B2B2;
 }
 
 /* Style page content */
 .main {
-  margin-left: 160px; /* Same as the width of the sidebar */
+  margin-left: 160px;
+  /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+  .sidenav {
+    padding-top: 15px;
+  }
 
-/**
-/**
-  * important: keep position fixed, you can however use top:0 instead of bottom:0
-  * if you want to make it stick to the top of the browser
-  */
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.filler {
+  width: 50%;
+}
+
+.stack {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}

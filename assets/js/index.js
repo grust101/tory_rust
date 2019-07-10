@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 100)
+    if ($(this).scrollTop() > 700)
      {
        $('.overviewpage').show('slow');
      }
@@ -16,12 +16,12 @@ $(window).scroll(function() {
       if ($(this).scrollTop() > 750)
        {
          $('.logopage').hide('slow');
-         $('.icon').show('slow');
+         $('.sidenav').show('slow');
        }
       else
        {
          $('.logopage').show('slow');
-         $('.icon').hide('slow');     }
+         $('.sidenav').hide('slow');     }
    });
 
   // $(window).scroll(function() {
