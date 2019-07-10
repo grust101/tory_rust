@@ -1,0 +1,19 @@
+{
+  "name": "tory_rust",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grust101/tory_rust.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grust101/tory_rust/issues"
+  },
+  "homepage": "https://github.com/grust101/tory_rust#readme"
+}

@@ -24,15 +24,14 @@ $(window).scroll(function() {
          $('.sidenav').hide('slow');     }
    });
 
-  // $(window).scroll(function() {
-  //     if ($(this).scrollTop() > 100)
-  //      {
-  //        $('.logopage').hide('slow');
-  //      }
-  //     else
-  //      {
-  //        $('.logopage').show();     }
-  //  });
+   function myFunction() {
+     var x = document.getElementByClassName("overviewpage");
+     if (x.style.display === "none") {
+       x.style.display = "block";
+     } else {
+       x.style.display = "none";
+     }
+   }
 
 (function($) {
   $.jInvertScroll(['.scroll'], // an array containing the selector(s) for the elements you want to animate
