@@ -1,6 +1,39 @@
 $(document).ready(function() {
-  document.getElementsByTagName("html")[0].style.visibility = "visible";
+  document.getElementsByTagName('html')[0].style.visibility = "visible";
 });
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 700)
+     {
+       $('.overviewpage').show('slow');
+     }
+    else
+     {
+       $('.overviewpage').hide();     }
+ });
+
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > 750)
+       {
+         $('.logopage').hide('slow');
+         $('.sidenav').show('slow');
+       }
+      else
+       {
+         $('.logopage').show('slow');
+         $('.sidenav').hide('slow');     }
+   });
+
+  // $(window).scroll(function() {
+  //     if ($(this).scrollTop() > 100)
+  //      {
+  //        $('.logopage').hide('slow');
+  //      }
+  //     else
+  //      {
+  //        $('.logopage').show();     }
+  //  });
+
 (function($) {
   $.jInvertScroll(['.scroll'], // an array containing the selector(s) for the elements you want to animate
     {
@@ -9,18 +42,4 @@ $(document).ready(function() {
       }
     });
 
-  $('.menu a').on('click', function(e) {
-    e.preventDefault();
-    var target = '.' + $(this).data('target');
-    var left = $(target).position().left;
-    var total = $('.front.scroll').width();
-    var perc = left / (total - $(window).width()) * 100;
-
-    var height = $('html').height();
-    var final = ((height - $(window).height()) / 100 * perc);
-
-    $('html, body').animate({
-      scrollTop: final
-    }, 500);
-  });
 }(jQuery));
