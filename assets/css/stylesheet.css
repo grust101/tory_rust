@@ -219,16 +219,19 @@ h1 {
   /* Stay on top */
   overflow-x: hidden;
   /* Disable horizontal scroll */
-  padding-top: 20px;
+  padding: 5% 5% 5% 5%;
 }
 
 .icon {
   padding: 10% 8px 6px 16px;
+  width: 100%;
+  height: auto;
+  max-width: 150px;
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 10% 8px 6px 16px;
+  padding: 2% 5% 5% 5%;
   text-decoration: none;
   font-size: 15px;
   font-family: "Gotham";
@@ -271,20 +274,25 @@ h1 {
 }
 
 .fashion {
-    display: none;
+  display: none;
 }
+
 .beauty {
-    display: none;
+  display: none;
 }
+
 .commissioned {
-    display: none;
+  display: none;
 }
+
 .cinemagraphsgifs {
-    display: none;
+  display: none;
 }
+
 .motion {
-    display: none;
+  display: none;
 }
+
 .about {
-    display: none;
+  display: none;
 }
