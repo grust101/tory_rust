@@ -191,14 +191,6 @@ h1 {
   left: 70%;
 }
 
-#overview {
-  display: none;
-}
-
-.elements {
-  max-height: 50%;
-}
-
 @font-face {
   font-family: Gotham;
   src: url(assets/css/fonts/Gotham-Black.otf);
@@ -207,7 +199,6 @@ h1 {
 
 /* The sidebar menu */
 .sidenav {
-  display: none;
   height: 100%;
   /* Full-height: remove this if you want "auto" height */
   background-image: linear-gradient(rgba(243, 203, 213, 1), rgba(244, 213, 208, 1), rgba(237, 232, 223, 1), rgba(229, 248, 241, 1));
@@ -219,7 +210,7 @@ h1 {
   /* Stay on top */
   overflow-x: hidden;
   /* Disable horizontal scroll */
-  padding: 5% 5% 5% 5%;
+  padding: 5% 2% 2% 2%;
 }
 
 .icon {

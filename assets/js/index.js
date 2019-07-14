@@ -1,145 +1,125 @@
 $(document).ready(function() {
   document.getElementsByTagName('html')[0].style.visibility = "visible";
-
+  document.getElementsByClassName('sidenav')[0].style.display = "none";
 });
-   $(window).ready(function(){
-     $(this).scrollTop(0);
 
+$(window).ready(function() {
+  $(this).scrollTop(0);
 
-     $(".fashion-link").click(function(){
-       // window.scrollTo(0, 2000);
-       $('.fashion').show('slow');
-       $('.overview').hide();
-       $('.beauty').hide();
-       $('.cinemagraphsgifs').hide();
-       $('.commissioned').hide();
-       $('.motion').hide();
-       $('.about').hide();
-     });
+  $(".fashion-link").click(function() {
+    $('.fashion').show('slow');
+    $('.overview').hide();
+    $('.beauty').hide();
+    $('.cinemagraphsgifs').hide();
+    $('.commissioned').hide();
+    $('.motion').hide();
+    $('.about').hide();
+  });
 
-     $(".overview-link").click(function(){
-       // window.scrollTo(0, 2000);
-       $('.overview').show('slow');
-       $('.fashion').hide();
-       $('.beauty').hide();
-       $('.cinemagraphsgifs').hide();
-       $('.commissioned').hide();
-       $('.motion').hide();
-       $('.about').hide();
-     });
+  $(".overview-link").click(function() {
+    $('.overview').show('slow');
+    $('.fashion').hide();
+    $('.beauty').hide();
+    $('.cinemagraphsgifs').hide();
+    $('.commissioned').hide();
+    $('.motion').hide();
+    $('.about').hide();
+  });
 
-     $(".beauty-link").click(function(){
-       // window.scrollTo(0, 2000);
-       $('.fashion').hide();
-       $('.overview').hide();
-       $('.cinemagraphsgifs').hide();
-       $('.commissioned').hide();
-       $('.motion').hide();
-       $('.about').hide();
-       $('.beauty').show('slow');
+  $(".beauty-link").click(function() {
+    $('.fashion').hide();
+    $('.overview').hide();
+    $('.cinemagraphsgifs').hide();
+    $('.commissioned').hide();
+    $('.motion').hide();
+    $('.about').hide();
+    $('.beauty').show('slow');
 
-     });
-   });
+  });
+});
 
-   // $(window).ready(function(){
-   //   $(".overview-link").click(function(){
-   //     // window.scrollTo(0, 2000);
-   //     $('.overview').show('slow');
-   //     $('.fashion').hide();
-   //     $('.beauty').hide();
-   //     $('.cinemagraphsgifs').hide();
-   //     $('.commissioned').hide();
-   //     $('.motion').hide();
-   //     $('.about').hide();
-   //   });
-   // });
+$(window).ready(function() {
+  $(".overview-link").click(function() {
+    $('.overview').show();
+    $('.fashion').hide();
+    $('.beauty').hide();
+    $('.cinemagraphsgifs').hide();
+    $('.commissioned').hide();
+    $('.motion').hide();
+    $('.about').hide();
+  });
+});
 
-   // $(window).ready(function(){
-   //   $(".beauty-link").click(function(){
-   //     // window.scrollTo(0, 2000);
-   //     $('.fashion').hide();
-   //     $('.overview').hide();
-   //     $('.cinemagraphsgifs').hide();
-   //     $('.commissioned').hide();
-   //     $('.motion').hide();
-   //     $('.about').hide();
-   //     $('.beauty').show('slow');
-   //
-   //   });
-   // });
-   //
-   // $(window).ready(function(){
-   //   $(".commissioned-link").click(function(){
-   //     // window.scrollTo(0, 2000);
-   //     $('.commissioned').show('slow');
-   //     $('.fashion').hide();
-   //     $('.overview').hide();
-   //     $('.cinemagraphsgifs').hide();
-   //     $('.beauty').hide();
-   //     $('.motion').hide();
-   //     $('.about').hide();
-   //   });
-   // });
-   //
-   // $(window).ready(function(){
-   //   // window.scrollTo(0, 2000);
-   //   $(".cinemagraphsgifs-link").click(function(){
-   //     $('.cinemagraphsgifs').show('slow');
-   //     $('.fashion').hide();
-   //     $('.overview').hide();
-   //     $('.commissioned').hide();
-   //     $('.beauty').hide();
-   //     $('.motion').hide();
-   //     $('.about').hide();
-   //   });
-   // });
-   // $(window).ready(function(){
-   //   // window.scrollTo(0, 2000);
-   //   $(".motion-link").click(function(){
-   //     $('.motion').show('slow');
-   //     $('.fashion').hide();
-   //     $('.overview').hide();
-   //     $('.commissioned').hide();
-   //     $('.beauty').hide();
-   //     $('.cinemagraphsgifs').hide();
-   //     $('.about').hide();
-   //   });
-   // });
-   //
-   // $(window).ready(function(){
-   //   window.scrollTo(0, 2000);
-   //   $(".about-link").click(function(){
-   //     $('.motion').show('slow');
-   //     $('.fashion').hide();
-   //     $('.overview').hide();
-   //     $('.commissioned').hide();
-   //     $('.beauty').hide();
-   //     $('.cinemagraphsgifs').hide();
-   //     $('.motion').hide();
-   //   });
-   // });
+$(window).ready(function() {
+  $(".beauty-link").click(function() {
+    $('.fashion').hide();
+    $('.overview').hide();
+    $('.cinemagraphsgifs').hide();
+    $('.commissioned').hide();
+    $('.motion').hide();
+    $('.about').hide();
+    $('.beauty').show('slow');
 
-   $(window).scroll(function() {
-       if ($(this).scrollTop() > 700)
-        {
-          $('#overview').show('slow');
-        }
-       else
-        {
-          $('#overview').hide();     }
-    });
+  });
+});
 
-     $(window).scroll(function() {
-         if ($(this).scrollTop() > 750)
-          {
-            $('.logopage').hide('slow');
-            $('.sidenav').show('slow');
-          }
-         else
-          {
-            $('.logopage').show('slow');
-            $('.sidenav').hide('slow');     }
-      });
+$(window).ready(function() {
+  $(".commissioned-link").click(function() {
+    $('.commissioned').show('slow');
+    $('.fashion').hide();
+    $('.overview').hide();
+    $('.cinemagraphsgifs').hide();
+    $('.beauty').hide();
+    $('.motion').hide();
+    $('.about').hide();
+  });
+});
+
+$(window).ready(function() {
+  $(".cinemagraphsgifs-link").click(function() {
+    $('.cinemagraphsgifs').show('slow');
+    $('.fashion').hide();
+    $('.overview').hide();
+    $('.commissioned').hide();
+    $('.beauty').hide();
+    $('.motion').hide();
+    $('.about').hide();
+  });
+});
+$(window).ready(function() {
+  $(".motion-link").click(function() {
+    $('.motion').show('slow');
+    $('.fashion').hide();
+    $('.overview').hide();
+    $('.commissioned').hide();
+    $('.beauty').hide();
+    $('.cinemagraphsgifs').hide();
+    $('.about').hide();
+  });
+});
+
+$(window).ready(function() {
+  $(".about-link").click(function() {
+    $('.motion').show('slow');
+    $('.fashion').hide();
+    $('.overview').hide();
+    $('.commissioned').hide();
+    $('.beauty').hide();
+    $('.cinemagraphsgifs').hide();
+    $('.motion').hide();
+  });
+});
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 750) {
+    $('.logopage').hide('slow');
+    $('.sidenav').show('slow');
+
+  } else {
+    $('.logopage').show('slow');
+    $('.sidenav').hide('slow');
+  }
+});
 
 (function($) {
   $.jInvertScroll(['.scroll'], // an array containing the selector(s) for the elements you want to animate
