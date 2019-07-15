@@ -174,7 +174,7 @@ $(window).ready(function() {
     $('.initial-mo').css('background-color', 'transparent');
     $('.initial-ab').css('font-style', 'italic');
     $('.initial-ab').css('background-color', '#B2B2B2');
-    $('.motion').show('slow');
+    $('.about').show('slow');
     $('.fashion').hide();
     $('.overview').hide();
     $('.commissioned').hide();
