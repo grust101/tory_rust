@@ -93,25 +93,6 @@ h1 {
   flex: 3;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .row {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .row {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-
 .intropage {
   z-index: 4;
 }
@@ -234,8 +215,8 @@ h1 {
   position: absolute;
   max-width: 45%;
   height: auto;
-  top: -25%;
-  left: 65%;
+  top: 70%;
+  left: 70%;
 }
 
 .imgcolumn2 .image6 {
@@ -250,8 +231,8 @@ h1 {
   position: absolute;
   max-width: 45%;
   height: auto;
-  top: 70%;
-  left: 70%;
+  top: -25%;
+  left: 65%;
 }
 
 @font-face {
@@ -311,16 +292,6 @@ h1 {
   padding: 0px 10px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-
-  .sidenav a {
-    font-size: 18px;
-  }
-}
 
 .filler {
   width: 50%;
@@ -374,7 +345,6 @@ h1 {
    left: 0;
    bottom: 0;
    width: 100%;
-   color: white;
 }
 
 .social {
@@ -388,4 +358,40 @@ h1 {
   padding-right: 5px;
   padding-top: 5px;
 
+}
+
+@media only screen and (max-width: 600px) {
+
+  .torylogo {
+    top: 30%;
+  }
+
+  .rustlogo {
+    top: 5%
+  }
+
+  .imgcolumn1 .image2 {
+    top: 70%;
+    left: 10%;
+  }
+
+  .imgcolumn1 .image3 {
+    top: 0%;
+    left: 31%;
+  }
+
+
+  .imgcolumn2 .image5 {
+    top: 70%;
+    left: 60%;
+  }
+
+  .imgcolumn2 .image7 {
+    top: 5%;
+    left: 60%;
+  }
+
+    .footer {
+        border: 5px solid blue;
+    }
 }
