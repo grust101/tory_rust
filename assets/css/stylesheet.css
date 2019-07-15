@@ -45,9 +45,54 @@ h1 {
 .middle {
   z-index: 1;
   width: 10000px;
-  height: 20%;
-  margin-left: 20%;
 }
+
+.column .row {
+  box-sizing: border-box;
+  margin-left: 30%;
+}
+.column {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.row {
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+  text-align: left;
+
+}
+
+.row img {
+  margin-top: 8px;
+  vertical-align: middle;
+  height: 435px;
+  padding: 10px 10px 10px 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .row {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 
 .intropage {
   z-index: 4;
