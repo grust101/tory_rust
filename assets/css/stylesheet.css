@@ -75,6 +75,24 @@ h1 {
   padding: 10px 10px 10px 10px;
 }
 
+.motion-row  {
+  display: flex;
+  padding: 10px 10px 10px 10px;
+
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width:700px;
+}
+.box {
+  padding: 10px 10px 10px 10px;
+}
+.right {
+  flex: 3;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .row {
