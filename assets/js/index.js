@@ -6,7 +6,22 @@ $(document).ready(function() {
 $(window).ready(function() {
   $(this).scrollTop(0);
 
+
   $(".fashion-link").click(function() {
+    $('.initial-ov').css('font-style', 'normal');
+    $('.initial-ov').css('background-color', 'transparent');
+    $('.initial-be').css('font-style', 'normal');
+    $('.initial-be').css('background-color', 'transparent');
+    $('.initial-co').css('font-style', 'normal');
+    $('.initial-co').css('background-color', 'transparent');
+    $('.initial-gi').css('font-style', 'normal');
+    $('.initial-gi').css('background-color', 'transparent');
+    $('.initial-mo').css('font-style', 'normal');
+    $('.initial-mo').css('background-color', 'transparent');
+    $('.initial-ab').css('font-style', 'normal');
+    $('.initial-ab').css('background-color', 'transparent');
+    $('.initial-fa').css('font-style', 'italic');
+    $('.initial-fa').css('background-color', '#B2B2B2');
     $('.fashion').show('slow');
     $('.overview').hide();
     $('.beauty').hide();
@@ -17,6 +32,20 @@ $(window).ready(function() {
   });
 
   $(".overview-link").click(function() {
+    $('.initial-fa').css('font-style', 'normal');
+    $('.initial-fa').css('background-color', 'transparent');
+    $('.initial-be').css('font-style', 'normal');
+    $('.initial-be').css('background-color', 'transparent');
+    $('.initial-co').css('font-style', 'normal');
+    $('.initial-co').css('background-color', 'transparent');
+    $('.initial-gi').css('font-style', 'normal');
+    $('.initial-gi').css('background-color', 'transparent');
+    $('.initial-mo').css('font-style', 'normal');
+    $('.initial-mo').css('background-color', 'transparent');
+    $('.initial-ab').css('font-style', 'normal');
+    $('.initial-ab').css('background-color', 'transparent');
+    $('.initial-ov').css('font-style', 'italic');
+    $('.initial-ov').css('background-color', '#B2B2B2');
     $('.overview').show('slow');
     $('.fashion').hide();
     $('.beauty').hide();
@@ -27,31 +56,20 @@ $(window).ready(function() {
   });
 
   $(".beauty-link").click(function() {
-    $('.fashion').hide();
-    $('.overview').hide();
-    $('.cinemagraphsgifs').hide();
-    $('.commissioned').hide();
-    $('.motion').hide();
-    $('.about').hide();
-    $('.beauty').show('slow');
-
-  });
-});
-
-$(window).ready(function() {
-  $(".overview-link").click(function() {
-    $('.overview').show();
-    $('.fashion').hide();
-    $('.beauty').hide();
-    $('.cinemagraphsgifs').hide();
-    $('.commissioned').hide();
-    $('.motion').hide();
-    $('.about').hide();
-  });
-});
-
-$(window).ready(function() {
-  $(".beauty-link").click(function() {
+    $('.initial-ov').css('font-style', 'normal');
+    $('.initial-ov').css('background-color', 'transparent');
+    $('.initial-fa').css('font-style', 'normal');
+    $('.initial-fa').css('background-color', 'transparent');
+    $('.initial-co').css('font-style', 'normal');
+    $('.initial-co').css('background-color', 'transparent');
+    $('.initial-gi').css('font-style', 'normal');
+    $('.initial-gi').css('background-color', 'transparent');
+    $('.initial-mo').css('font-style', 'normal');
+    $('.initial-mo').css('background-color', 'transparent');
+    $('.initial-ab').css('font-style', 'normal');
+    $('.initial-ab').css('background-color', 'transparent');
+    $('.initial-be').css('font-style', 'italic');
+    $('.initial-be').css('background-color', '#B2B2B2');
     $('.fashion').hide();
     $('.overview').hide();
     $('.cinemagraphsgifs').hide();
@@ -65,6 +83,20 @@ $(window).ready(function() {
 
 $(window).ready(function() {
   $(".commissioned-link").click(function() {
+    $('.initial-ov').css('font-style', 'normal');
+    $('.initial-ov').css('background-color', 'transparent');
+    $('.initial-fa').css('font-style', 'normal');
+    $('.initial-fa').css('background-color', 'transparent');
+    $('.initial-be').css('font-style', 'normal');
+    $('.initial-be').css('background-color', 'transparent');
+    $('.initial-gi').css('font-style', 'normal');
+    $('.initial-gi').css('background-color', 'transparent');
+    $('.initial-mo').css('font-style', 'normal');
+    $('.initial-mo').css('background-color', 'transparent');
+    $('.initial-ab').css('font-style', 'normal');
+    $('.initial-ab').css('background-color', 'transparent');
+    $('.initial-co').css('font-style', 'italic');
+    $('.initial-co').css('background-color', '#B2B2B2');
     $('.commissioned').show('slow');
     $('.fashion').hide();
     $('.overview').hide();
@@ -77,6 +109,20 @@ $(window).ready(function() {
 
 $(window).ready(function() {
   $(".cinemagraphsgifs-link").click(function() {
+    $('.initial-ov').css('font-style', 'normal');
+    $('.initial-ov').css('background-color', 'transparent');
+    $('.initial-fa').css('font-style', 'normal');
+    $('.initial-fa').css('background-color', 'transparent');
+    $('.initial-be').css('font-style', 'normal');
+    $('.initial-be').css('background-color', 'transparent');
+    $('.initial-co').css('font-style', 'normal');
+    $('.initial-co').css('background-color', 'transparent');
+    $('.initial-mo').css('font-style', 'normal');
+    $('.initial-mo').css('background-color', 'transparent');
+    $('.initial-ab').css('font-style', 'normal');
+    $('.initial-ab').css('background-color', 'transparent');
+    $('.initial-gi').css('font-style', 'italic');
+    $('.initial-gi').css('background-color', '#B2B2B2');
     $('.cinemagraphsgifs').show('slow');
     $('.fashion').hide();
     $('.overview').hide();
@@ -88,6 +134,20 @@ $(window).ready(function() {
 });
 $(window).ready(function() {
   $(".motion-link").click(function() {
+    $('.initial-ov').css('font-style', 'normal');
+    $('.initial-ov').css('background-color', 'transparent');
+    $('.initial-fa').css('font-style', 'normal');
+    $('.initial-fa').css('background-color', 'transparent');
+    $('.initial-be').css('font-style', 'normal');
+    $('.initial-be').css('background-color', 'transparent');
+    $('.initial-co').css('font-style', 'normal');
+    $('.initial-co').css('background-color', 'transparent');
+    $('.initial-gi').css('font-style', 'normal');
+    $('.initial-gi').css('background-color', 'transparent');
+    $('.initial-ab').css('font-style', 'normal');
+    $('.initial-ab').css('background-color', 'transparent');
+    $('.initial-mo').css('font-style', 'italic');
+    $('.initial-mo').css('background-color', '#B2B2B2');
     $('.motion').show('slow');
     $('.fashion').hide();
     $('.overview').hide();
@@ -100,6 +160,20 @@ $(window).ready(function() {
 
 $(window).ready(function() {
   $(".about-link").click(function() {
+    $('.initial-ov').css('font-style', 'normal');
+    $('.initial-ov').css('background-color', 'transparent');
+    $('.initial-fa').css('font-style', 'normal');
+    $('.initial-fa').css('background-color', 'transparent');
+    $('.initial-be').css('font-style', 'normal');
+    $('.initial-be').css('background-color', 'transparent');
+    $('.initial-co').css('font-style', 'normal');
+    $('.initial-co').css('background-color', 'transparent');
+    $('.initial-gi').css('font-style', 'normal');
+    $('.initial-gi').css('background-color', 'transparent');
+    $('.initial-mo').css('font-style', 'normal');
+    $('.initial-mo').css('background-color', 'transparent');
+    $('.initial-ab').css('font-style', 'italic');
+    $('.initial-ab').css('background-color', '#B2B2B2');
     $('.motion').show('slow');
     $('.fashion').hide();
     $('.overview').hide();

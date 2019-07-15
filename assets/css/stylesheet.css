@@ -259,10 +259,15 @@ h1 {
 }
 
 .icon {
-  padding: 10% 8px 6px 16px;
+  padding: 10% 0 10% 0;
   width: 100%;
   height: auto;
   max-width: 150px;
+}
+
+.initial-ov {
+  font-style: italic;
+  background-color: #B2B2B2;
 }
 
 /* The navigation menu links */
