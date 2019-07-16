@@ -239,7 +239,7 @@ h1 {
 }
 
 @font-face {
-  font-family: Gotham;
+  font-family: "Gotham", sans-serif;;
   src: url(assets/css/fonts/Gotham-Black.otf);
   font-weight: 400;
 }
@@ -361,6 +361,9 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
+  .sidenav {
+    display: none;
+  }
   .torylogo {
     top: 30%;
   }
@@ -381,6 +384,11 @@ h1 {
 
   .imgcolumn2 .image5 {
     top: 70%;
+    left: 50%;
+  }
+
+  .imgcolumn2 .image6 {
+    top: 40%;
     left: 60%;
   }
 
@@ -395,7 +403,6 @@ h1 {
   }
 
   .footer {
-    border: 5px solid blue;
   }
 }
 
@@ -409,7 +416,8 @@ h1 {
   overflow: hidden;
   background-color: #ffffff;
   display:block;
-
+  position: fixed;
+  width: 100%;
 }
 
 .topnav a {

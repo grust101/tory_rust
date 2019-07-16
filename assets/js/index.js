@@ -1,5 +1,5 @@
 $(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
+  $(window).scrollTop(0);
 });
 
 $(document).ready(function() {
@@ -194,13 +194,15 @@ $(window).ready(function() {
 });
 
 $(window).scroll(function() {
-  if ($(this).scrollTop() > 750) {
-    $('.logopage').hide('slow');
-    $('.sidenav').show('slow');
+  if ($(window).width() > 768) {
+    if ($(this).scrollTop() > 750) {
+      $('.logopage').hide('slow');
+      $('.sidenav').show('slow');
 
-  } else {
-    $('.logopage').show('slow');
-    $('.sidenav').hide('slow');
+    } else {
+      $('.logopage').show('slow');
+      $('.sidenav').hide('slow');
+    }
   }
 });
 
