@@ -239,7 +239,7 @@ h1 {
 }
 
 @font-face {
-  font-family: "Gotham", sans-serif;;
+  font-family: "Arial", sans-serif;;
   src: url(assets/css/fonts/Gotham-Black.otf);
   font-weight: 400;
 }
@@ -278,7 +278,8 @@ h1 {
   padding: 2% 5% 5% 5%;
   text-decoration: none;
   font-size: 15px;
-  font-family: "Gotham";
+  font-family: "Arial", sans-serif;
+  font-weight: bolder;
   color: #ffffff;
   display: block;
 }
@@ -425,7 +426,8 @@ h1 {
   display: block;
   color: #555;
   font-size: 15px;
-  font-family: "Gotham";
+  font-family: "Arial", sans-serif;
+  font-weight: bolder;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
