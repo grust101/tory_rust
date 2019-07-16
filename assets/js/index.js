@@ -10,6 +10,7 @@ $(document).ready(function() {
 
 $(window).ready(function() {
   $(".fashion-link").click(function() {
+    $(window).scrollTop(1550);
     $('.initial-ov').css('font-style', 'normal');
     $('.initial-ov').css('background-color', 'transparent');
     $('.initial-be').css('font-style', 'normal');
@@ -34,6 +35,7 @@ $(window).ready(function() {
   });
 
   $(".overview-link").click(function() {
+    $(window).scrollTop(1550);
     $('.initial-fa').css('font-style', 'normal');
     $('.initial-fa').css('background-color', 'transparent');
     $('.initial-be').css('font-style', 'normal');
@@ -58,6 +60,7 @@ $(window).ready(function() {
   });
 
   $(".beauty-link").click(function() {
+    $(window).scrollTop(1550);
     $('.initial-ov').css('font-style', 'normal');
     $('.initial-ov').css('background-color', 'transparent');
     $('.initial-fa').css('font-style', 'normal');
@@ -81,10 +84,9 @@ $(window).ready(function() {
     $('.beauty').show('slow');
 
   });
-});
 
-$(window).ready(function() {
   $(".commissioned-link").click(function() {
+    $(window).scrollTop(1550);
     $('.initial-ov').css('font-style', 'normal');
     $('.initial-ov').css('background-color', 'transparent');
     $('.initial-fa').css('font-style', 'normal');
@@ -107,10 +109,9 @@ $(window).ready(function() {
     $('.motion').hide();
     $('.about').hide();
   });
-});
 
-$(window).ready(function() {
   $(".cinemagraphsgifs-link").click(function() {
+    $(window).scrollTop(1550);
     $('.initial-ov').css('font-style', 'normal');
     $('.initial-ov').css('background-color', 'transparent');
     $('.initial-fa').css('font-style', 'normal');
@@ -133,9 +134,9 @@ $(window).ready(function() {
     $('.motion').hide();
     $('.about').hide();
   });
-});
-$(window).ready(function() {
+
   $(".motion-link").click(function() {
+    $(window).scrollTop(1550);
     $('.initial-ov').css('font-style', 'normal');
     $('.initial-ov').css('background-color', 'transparent');
     $('.initial-fa').css('font-style', 'normal');
@@ -158,10 +159,9 @@ $(window).ready(function() {
     $('.cinemagraphsgifs').hide();
     $('.about').hide();
   });
-});
 
-$(window).ready(function() {
   $(".about-link").click(function() {
+    $(window).scrollTop(1550);
     $('.initial-ov').css('font-style', 'normal');
     $('.initial-ov').css('background-color', 'transparent');
     $('.initial-fa').css('font-style', 'normal');
