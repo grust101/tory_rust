@@ -161,7 +161,7 @@ $(window).ready(function() {
   });
 
   $(".about-link").click(function() {
-    $(window).scrollTop(1550);
+    $(document).scrollTop(1550);
     $('.initial-ov').css('font-style', 'normal');
     $('.initial-ov').css('background-color', 'transparent');
     $('.initial-fa').css('font-style', 'normal');
