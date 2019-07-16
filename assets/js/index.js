@@ -184,6 +184,7 @@ $(window).ready(function() {
     $('.cinemagraphsgifs').hide();
     $('.motion').hide();
   });
+
 });
 
 $(window).scroll(function() {
