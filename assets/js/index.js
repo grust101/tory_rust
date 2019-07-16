@@ -1,12 +1,14 @@
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
+
 $(document).ready(function() {
   document.getElementsByTagName('html')[0].style.visibility = "visible";
   document.getElementsByClassName('sidenav')[0].style.display = "none";
 });
 
+
 $(window).ready(function() {
-  $(this).scrollTop(0);
-
-
   $(".fashion-link").click(function() {
     $('.initial-ov').css('font-style', 'normal');
     $('.initial-ov').css('background-color', 'transparent');
