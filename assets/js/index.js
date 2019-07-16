@@ -187,6 +187,12 @@ $(window).ready(function() {
 
 });
 
+$(window).ready(function() {
+  $(".icon").click(function() {
+    console.log("icon clicked!")
+  });
+});
+
 $(window).scroll(function() {
   if ($(this).scrollTop() > 750) {
     $('.logopage').hide('slow');

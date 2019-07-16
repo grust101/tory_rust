@@ -6,9 +6,40 @@
   <title>Tory Rust</title>
   <link rel="stylesheet" href="assets/css/stylesheet.css" />
 </head>
+<body>
+
+<!-- Side navigation -->
+<div class="sidenav">
+  <a href="https://toryyrust.herokuapp.com/"><img class="icon" src="assets/img/logos/Logo.png" alt=""></a>
+  <a class="overview-link"><span class="initial-ov">O V E R V I E W</span></a>
+  <a class="fashion-link"><span class="initial-fa">F A S H I O N</span></a>
+  <a class="beauty-link"><span class="initial-be">B E A U T Y</span></a>
+  <a class="commissioned-link"><span class="initial-co">C O M M I S S I O N E D</span></a>
+  <a class="cinemagraphsgifs-link"><span class="initial-gi"> G I F s</span></a>
+  <a class="motion-link"><span class="initial-mo">M O T I O N</span></a>
+  <a class="about-link"><span class="initial-ab">A B O U T + C O N T A C T</span></a>
+</div>
+<div class="topnav" id="myTopnav">
+  <div class="routes">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="m-icon" onclick="myFunction()">&#9776;</a>
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
 <!-- welcome page with photos -->
 
-<body>
   <div class="intropage">
     <div class="imgcolumn1">
       <img class="image1" src="assets/img/intro/intro1.jpg" alt="">
@@ -50,29 +81,14 @@
       </div>
     </div>
   </div>
-  <!-- Side navigation -->
-  <div class="sidenav">
-    <div class="dropdown">
-      <a href="https://toryyrust.herokuapp.com/"><img class="icon" src="assets/img/logos/Logo.png" alt=""></a>
-      <!-- <button class="dropbtn">Dropdown
-      </button> -->
-      <div class="dropdown-content">
-        <a class="overview-link"><span class="initial-ov">O V E R V I E W</span></a>
-        <a class="fashion-link"><span class="initial-fa">F A S H I O N</span></a>
-        <a class="beauty-link"><span class="initial-be">B E A U T Y</span></a>
-        <a class="commissioned-link"><span class="initial-co">C O M M I S S I O N E D</span></a>
-        <a class="cinemagraphsgifs-link"><span class="initial-gi"> G I F s</span></a>
-        <a class="motion-link"><span class="initial-mo">M O T I O N</span></a>
-        <a class="about-link"><span class="initial-ab">A B O U T + C O N T A C T</span></a>
-      </div>
+
+  <div class="footer">
+    <div class="social">
+      <a href="#"><img src="assets/img/intro/facebook.jpg"></a>
+      <a href="https://twitter.com/tory_rust"><img src="assets/img/intro/twitter.jpg"></a>
+      <a href="https://www.instagram.com/toryrust/"><img src="assets/img/intro/instagram.jpg"></a>
     </div>
-    <div class="footer">
-      <div class="social">
-        <a href="#"><img src="assets/img/intro/facebook.jpg"></a>
-        <a href="https://twitter.com/tory_rust"><img src="assets/img/intro/twitter.jpg"></a>
-        <a href="https://www.instagram.com/toryrust/"><img src="assets/img/intro/instagram.jpg"></a>
-      </div>
-    </div>
+  </div>
   </div>
 
   <div class="pages">

@@ -360,7 +360,7 @@ h1 {
   padding-top: 5px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .torylogo {
     top: 30%;
   }
@@ -375,8 +375,8 @@ h1 {
   }
 
   .imgcolumn1 .image3 {
-    top: 0%;
-    left: 31%;
+    top: 5%;
+    left: 35%;
   }
 
   .imgcolumn2 .image5 {
@@ -385,78 +385,9 @@ h1 {
   }
 
   .imgcolumn2 .image7 {
-    top: 5%;
-    left: 60%;
-  }
-
-  .sidenav {
-    overflow: hidden;
-    /* Full-height: remove this if you want "auto" height */
-    background-image: none;
-    width: 100%;
-    /* Set the width of the sidebar */
-    position: fixed;
-    /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 3;
-    padding: 5% 2% 2% 2%;
-  }
-
-  .sidenav a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  .dropdown {
-    display: inline;
-    float: left;
-    overflow: hidden;
-    width: 100%;
-  }
-
-  .dropdown .dropbtn {
-    font-size: 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: #333;
-    font-family: inherit;
-    margin: 0;
-  }
-
-  .sidenav a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
+    top: 10%;
+    left: 70%;
+    max-width: 25%;
   }
 
   .icon {
@@ -465,5 +396,79 @@ h1 {
 
   .footer {
     border: 5px solid blue;
+  }
+}
+
+.topnav {
+  display:none;
+  z-index: 6;
+}
+
+@media screen and (max-width: 768px) {
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  display:block;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #555;
+  font-size: 15px;
+  font-family: "Gotham";
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #ffffff;
+  color: white;
+}
+
+.topnav .m-icon {
+  display: none;
+  color: #555;
+}
+
+.topnav .routes a:hover {
+  background-color: rgba(229, 248, 241, 1);
+  font-style: italic;
+}
+
+
+.m-icon:hover {
+  background-color: rgba(229, 248, 241, 1);
+}
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.m-icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .m-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive {float: none;}
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    display: block;
+    width: 100%;
+    text-align: left;
   }
 }
