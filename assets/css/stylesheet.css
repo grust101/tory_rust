@@ -21,7 +21,7 @@ body {
   text-align: center;
   margin: 0px;
   width: 100%;
-  height: 100%;
+  max-height: 6000px;
   padding: 0;
 }
 
@@ -247,6 +247,9 @@ h1 {
   font-weight: 400;
 }
 
+.overview-m {
+  display:none;
+}
 /* The sidebar menu */
 .sidenav {
   height: 100%;
@@ -365,11 +368,22 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
+body {
+  max-height: 60000px;
+}
   .sidenav {
     display: none;
   }
   .torylogo {
     display:none;
+  }
+
+  .middle {
+    display: none;
+  }
+
+  .horizon {
+    display: none;
   }
 
   .rustlogo {
@@ -492,5 +506,54 @@ h1 {
     display: block;
     width: 100%;
     text-align: left;
+  }
+}
+
+.mobile-row .mobile-column {
+  box-sizing: border-box;
+}
+
+.mobile-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create 2 equal columns that sits next to each other */
+.mobile-column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.mobile-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 768px) {
+  .overview-m {
+    display:block;
+    position: absolute;
+    top: 150%;
+  }
+  .mobile-column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .mobile-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
 }
