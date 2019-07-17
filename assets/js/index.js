@@ -25,7 +25,7 @@ $(window).ready(function() {
     $('.initial-ab').css('background-color', 'transparent');
     $('.initial-fa').css('font-style', 'italic');
     $('.initial-fa').css('background-color', '#B2B2B2');
-    $('.fashion').show('slow');
+    $('.fashion').show();
     $('.overview').hide();
     $('.beauty').hide();
     $('.cinemagraphsgifs').hide();
@@ -50,7 +50,7 @@ $(window).ready(function() {
     $('.initial-ab').css('background-color', 'transparent');
     $('.initial-ov').css('font-style', 'italic');
     $('.initial-ov').css('background-color', '#B2B2B2');
-    $('.overview').show('slow');
+    $('.overview').show();
     $('.fashion').hide();
     $('.beauty').hide();
     $('.cinemagraphsgifs').hide();
@@ -81,7 +81,7 @@ $(window).ready(function() {
     $('.commissioned').hide();
     $('.motion').hide();
     $('.about').hide();
-    $('.beauty').show('slow');
+    $('.beauty').show();
 
   });
 
@@ -101,7 +101,7 @@ $(window).ready(function() {
     $('.initial-ab').css('background-color', 'transparent');
     $('.initial-co').css('font-style', 'italic');
     $('.initial-co').css('background-color', '#B2B2B2');
-    $('.commissioned').show('slow');
+    $('.commissioned').show();
     $('.fashion').hide();
     $('.overview').hide();
     $('.cinemagraphsgifs').hide();
@@ -126,7 +126,7 @@ $(window).ready(function() {
     $('.initial-ab').css('background-color', 'transparent');
     $('.initial-gi').css('font-style', 'italic');
     $('.initial-gi').css('background-color', '#B2B2B2');
-    $('.cinemagraphsgifs').show('slow');
+    $('.cinemagraphsgifs').show();
     $('.fashion').hide();
     $('.overview').hide();
     $('.commissioned').hide();
@@ -151,7 +151,7 @@ $(window).ready(function() {
     $('.initial-ab').css('background-color', 'transparent');
     $('.initial-mo').css('font-style', 'italic');
     $('.initial-mo').css('background-color', '#B2B2B2');
-    $('.motion').show('slow');
+    $('.motion').show();
     $('.fashion').hide();
     $('.overview').hide();
     $('.commissioned').hide();
@@ -176,7 +176,7 @@ $(window).ready(function() {
     $('.initial-mo').css('background-color', 'transparent');
     $('.initial-ab').css('font-style', 'italic');
     $('.initial-ab').css('background-color', '#B2B2B2');
-    $('.about').show('slow');
+    $('.about').show();
     $('.fashion').hide();
     $('.overview').hide();
     $('.commissioned').hide();
@@ -185,10 +185,27 @@ $(window).ready(function() {
     $('.motion').hide();
   });
 
-  $(".fashion-link-m").click(function() {
-    $(window).scrollTop(1550);
-  });
+  $(".overview-link-m").click(function() {
+      $(document).scrollTop(1000);
+      $('#overview-m').show();
+      $('#fashion-m').hide();
+      $('#beauty-m').hide();
+      });
 
+$(".fashion-link-m").click(function() {
+    $(document).scrollTop(1000);
+    $('#fashion-m').show();
+    $('#overview-m').hide();
+    $('#beauty-m').hide();
+    });
+
+
+$(".beauty-link-m").click(function() {
+    $(document).scrollTop(1000);
+    $('#beauty-m').show();
+    $('#overview-m').hide();
+    $('#fashion-m').hide();
+    });
 });
 
 

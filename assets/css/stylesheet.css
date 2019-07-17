@@ -249,10 +249,17 @@ h1 {
   font-weight: 400;
 }
 
-.overview-m {
+.mobile-page {
   display: none;
 }
 
+#fashion-m {
+  display: none;
+}
+
+#beauty-m {
+  display: none;
+}
 /* The sidebar menu */
 .sidenav {
   height: 100%;
@@ -446,6 +453,7 @@ h1 {
 .ent-logo-m {
   left: 20%;
 }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -565,10 +573,10 @@ h1 {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 768px) {
-  .overview-m {
+  .mobile-page {
     display: block;
     position: absolute;
-    top: 150%;
+    top: 125%;
   }
 
   .mobile-column {
