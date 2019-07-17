@@ -185,6 +185,10 @@ $(window).ready(function() {
     $('.motion').hide();
   });
 
+  $(".fashion-link-m").click(function() {
+    $(window).scrollTop(1550);
+  });
+
 });
 
 
