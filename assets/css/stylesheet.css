@@ -442,6 +442,12 @@ h1 {
   z-index: 6;
 }
 
+@media only screen and (max-width: 600px) {
+.ent-logo-m {
+  left: 20%;
+}
+
+
 @media screen and (max-width: 768px) {
   .topnav {
     overflow: hidden;
