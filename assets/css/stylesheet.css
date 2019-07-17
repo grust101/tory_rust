@@ -260,6 +260,30 @@ h1 {
 #beauty-m {
   display: none;
 }
+
+#commissioned-m {
+  display: none;
+}
+
+#gif-m {
+  display: none;
+}
+
+#motion-m {
+  display: none;
+}
+
+#about-m {
+  display: none;
+}
+
+.vimeo-mobile {
+  margin: 0 auto;
+}
+
+.m-video {
+  padding: 10px 0 10px 0;
+}
 /* The sidebar menu */
 .sidenav {
   height: 100%;
@@ -451,7 +475,7 @@ h1 {
 
 @media only screen and (max-width: 600px) {
 .ent-logo-m {
-  left: 20%;
+  left: 10%;
 }
 }
 
