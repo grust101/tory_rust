@@ -24,7 +24,7 @@ $(window).ready(function() {
     $('.initial-ab').css('font-style', 'normal');
     $('.initial-ab').css('background-color', 'transparent');
     $('.initial-fa').css('font-style', 'italic');
-    $('.initial-fa').css('background-color', '#B2B2B2');
+    $('.initial-fa').css('background-color', '#cccccc');
     $('.fashion').show();
     $('.overview').hide();
     $('.beauty').hide();
@@ -49,7 +49,7 @@ $(window).ready(function() {
     $('.initial-ab').css('font-style', 'normal');
     $('.initial-ab').css('background-color', 'transparent');
     $('.initial-ov').css('font-style', 'italic');
-    $('.initial-ov').css('background-color', '#B2B2B2');
+    $('.initial-ov').css('background-color', '#cccccc');
     $('.overview').show();
     $('.fashion').hide();
     $('.beauty').hide();
@@ -74,7 +74,7 @@ $(window).ready(function() {
     $('.initial-ab').css('font-style', 'normal');
     $('.initial-ab').css('background-color', 'transparent');
     $('.initial-be').css('font-style', 'italic');
-    $('.initial-be').css('background-color', '#B2B2B2');
+    $('.initial-be').css('background-color', '#cccccc');
     $('.fashion').hide();
     $('.overview').hide();
     $('.cinemagraphsgifs').hide();
@@ -100,7 +100,7 @@ $(window).ready(function() {
     $('.initial-ab').css('font-style', 'normal');
     $('.initial-ab').css('background-color', 'transparent');
     $('.initial-co').css('font-style', 'italic');
-    $('.initial-co').css('background-color', '#B2B2B2');
+    $('.initial-co').css('background-color', '#cccccc');
     $('.commissioned').show();
     $('.fashion').hide();
     $('.overview').hide();
@@ -125,7 +125,7 @@ $(window).ready(function() {
     $('.initial-ab').css('font-style', 'normal');
     $('.initial-ab').css('background-color', 'transparent');
     $('.initial-gi').css('font-style', 'italic');
-    $('.initial-gi').css('background-color', '#B2B2B2');
+    $('.initial-gi').css('background-color', '#cccccc');
     $('.cinemagraphsgifs').show();
     $('.fashion').hide();
     $('.overview').hide();
@@ -150,7 +150,7 @@ $(window).ready(function() {
     $('.initial-ab').css('font-style', 'normal');
     $('.initial-ab').css('background-color', 'transparent');
     $('.initial-mo').css('font-style', 'italic');
-    $('.initial-mo').css('background-color', '#B2B2B2');
+    $('.initial-mo').css('background-color', '#cccccc');
     $('.motion').show();
     $('.fashion').hide();
     $('.overview').hide();
@@ -175,7 +175,7 @@ $(window).ready(function() {
     $('.initial-mo').css('font-style', 'normal');
     $('.initial-mo').css('background-color', 'transparent');
     $('.initial-ab').css('font-style', 'italic');
-    $('.initial-ab').css('background-color', '#B2B2B2');
+    $('.initial-ab').css('background-color', '#cccccc');
     $('.about').show();
     $('.fashion').hide();
     $('.overview').hide();
@@ -259,7 +259,7 @@ $(".cinemagraphsgifs-link-m").click(function() {
       });
 
   $(".about-link-m").click(function() {
-    $(document).scrollTop(1000);
+    $(document).scrollTop(750);
     $('#about-m').show();
     $('#overview-m').hide();
     $('#fashion-m').hide();
