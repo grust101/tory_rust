@@ -151,18 +151,17 @@ h1 {
 
 .imgcolumn1 .image1 {
   position: absolute;
-  max-width: 35%;
-  max-height: 35%;
-  top: 15%;
-  left: 10%;
+  max-width: 15%;
+  top: 20%;
+  left: 3%;
 }
 
 .imgcolumn1 .image2 {
   position: absolute;
-  max-width: 45%;
-  max-height: 45%;
-  top: 70%;
-  left: 25%;
+  max-width: 50%;
+  max-height: 50%;
+  top: 0%;
+  left: 15%;
 }
 
 .torylogo {
@@ -197,42 +196,39 @@ h1 {
 
 .imgcolumn1 .image3 {
   position: absolute;
-  max-width: 35%;
+  max-width: 20%;
   height: auto;
-  top: 5%;
-  left: 31%;
+  top: 75%;
+  left: 15%;
 }
 
 .imgcolumn2 .image4 {
   position: absolute;
-  max-width: 35%;
-  height: auto;
-  top: 45%;
-  left: 5%;
+  max-width: 20%;
+  top: 55%;
+  left: 0%;
 }
 
 .imgcolumn2 .image5 {
   position: absolute;
-  max-width: 45%;
+  max-width: 30%;
   height: auto;
-  top: 70%;
+  top: 65%;
   left: 70%;
 }
 
 .imgcolumn2 .image6 {
   position: absolute;
-  max-width: 35%;
-  height: auto;
-  top: 40%;
+  max-width: 12%;
+  top: 35%;
   left: 80%;
 }
 
 .imgcolumn2 .image7 {
   position: absolute;
-  max-width: 45%;
-  height: auto;
-  top: -25%;
-  left: 65%;
+  max-width: 20%;
+  top: -10%;
+  left: 70%;
 }
 
 .scroll-down {
@@ -438,31 +434,44 @@ h1 {
     left: 30%;
     overflow: visible;
   }
+  .imgcolumn1 .image1 {
+    top: 30%;
+  }
 
   .imgcolumn1 .image2 {
-    top: 70%;
+    top: 5%;
     left: 10%;
+    max-width: 40%;
   }
 
   .imgcolumn1 .image3 {
-    top: 5%;
-    left: 35%;
+    top: 45%;
+    left: -15%;
+    max-width: 50%;
+  }
+
+  .imgcolumn2 .image4 {
+    max-width: 50%;
+    top: 65%;
+    left: -5%;
   }
 
   .imgcolumn2 .image5 {
     top: 70%;
-    left: 50%;
+    left: 60%;
+    max-width: 50%;
   }
 
   .imgcolumn2 .image6 {
-    top: 40%;
-    left: 60%;
+    top: 50%;
+    left: 75%;
+    max-width: 20%;
   }
 
   .imgcolumn2 .image7 {
     top: 10%;
     left: 70%;
-    max-width: 25%;
+    max-width: 35%;
   }
 
   .icon {
