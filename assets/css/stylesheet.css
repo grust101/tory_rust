@@ -39,6 +39,10 @@ h1 {
   z-index: 2;
   width: 15000px;
 }
+.other{
+  z-index: 2;
+  width: 20000px;
+}
 
 .middle {
   z-index: 1;
