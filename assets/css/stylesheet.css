@@ -391,6 +391,10 @@ h1 {
   max-width: 500px;
 }
 
+.about-contact a {
+  color: black;
+}
+
 .footer {
   z-index: 6;
   position: fixed;
